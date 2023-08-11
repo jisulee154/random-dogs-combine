@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hvE-Pk-NaO">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="7qS-4C-GBj">
+            <objects>
+                <viewController id="hvE-Pk-NaO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="P4l-xY-NeM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="archivebox" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5wm-9C-p6l">
+                                <rect key="frame" x="20" y="377.66666666666669" width="100" height="97"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="ltw-Ki-2QE"/>
+                                    <constraint firstAttribute="width" constant="100" id="rNk-a4-9yd"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="강아지 즐겨찾기🔎" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Na9-he-w3E">
+                                <rect key="frame" x="130" y="366.33333333333331" width="243" height="119.66666666666669"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oHC-jI-xQg"/>
+                        <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                        <constraints>
+                            <constraint firstItem="5wm-9C-p6l" firstAttribute="centerY" secondItem="P4l-xY-NeM" secondAttribute="centerY" id="O74-Mh-MWh"/>
+                            <constraint firstItem="oHC-jI-xQg" firstAttribute="trailing" secondItem="Na9-he-w3E" secondAttribute="trailing" constant="20" id="Pct-5h-4Qx"/>
+                            <constraint firstItem="Na9-he-w3E" firstAttribute="centerY" secondItem="P4l-xY-NeM" secondAttribute="centerY" id="aed-dg-qPT"/>
+                            <constraint firstItem="5wm-9C-p6l" firstAttribute="leading" secondItem="oHC-jI-xQg" secondAttribute="leading" constant="20" id="fNO-1a-SNC"/>
+                            <constraint firstItem="Na9-he-w3E" firstAttribute="leading" secondItem="5wm-9C-p6l" secondAttribute="trailing" constant="10" id="hCz-te-33X"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgh-TM-8PZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11.450381679389313" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="archivebox" catalog="system" width="128" height="107"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
